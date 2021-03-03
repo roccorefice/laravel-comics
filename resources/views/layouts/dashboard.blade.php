@@ -55,6 +55,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ asset('guest') }}">Admin</a>
+                                    <a class="dropdown-item" href="{{ asset('/') }}">Guest View</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -76,9 +78,8 @@
             <div class="row">
                 <div class="col-xs-12 col-md-3 col-lg-3">
                     <ul class="list-unstyled">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Categories</a></li>
+                        <li><a href="{{ asset('admin') }}">Dashboard</a></li>
+                        <li><a href="{{ asset('admin/comics') }}">Comics</a></li>
                     </ul>
                 </div>
                 <main class=" col-xs-12 col-md-9 col-lg-9">
