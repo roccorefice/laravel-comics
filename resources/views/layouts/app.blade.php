@@ -75,7 +75,7 @@
         <main class="py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-lg-12">
                         @yield('content')
                         
                     </div>
