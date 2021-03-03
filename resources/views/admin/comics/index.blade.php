@@ -19,11 +19,10 @@
                 <td>{{ $comic->title }}</td>
                 <td>{{ $comic->slug }}</td>
                 <td>
-                    <a class="btn btn-primary p-1" href="{{ route('admin.comics.show', ['comic' => $comic->id]) }}">View</a>
+                    <a class="btn btn-primary p-1" href="{{ route('admin.comics.show', ['comic' => $comic->slug]) }}">View</a>
                     <a class="btn btn-primary p-1" href="#">Edit</a>
                     <a class="btn btn-primary p-1" href="#">Delete</a>
                 </td>
-
             </tr>
                 
             @endforeach
