@@ -20,7 +20,7 @@
                 <td>{{ $comic->slug }}</td>
                 <td>
                     <a class="btn btn-primary p-1" href="{{ route('admin.comics.show', ['comic' => $comic->slug]) }}">View</a>
-                    <a class="btn btn-primary p-1" href="#">Edit</a>
+                    <a class="btn btn-primary p-1" href="{{route('admin.comics.edit', ['comic' => $comic->slug])}}">Edit</a>
                     <a class="btn btn-primary p-1" href="#">Delete</a>
                 </td>
             </tr>
