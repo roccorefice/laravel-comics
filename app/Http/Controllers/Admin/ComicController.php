@@ -71,7 +71,13 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+         //validazione
+         $validatedData = $request->validate([
+            'title' => 'required', 
+        ]);
+
+        $comic->update($validatedData);
+        return redirect()->route('admin.comics.index');
     }
 
     /**
@@ -82,6 +88,7 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return redirect()->route('admin.comics.index');
     }
 }
