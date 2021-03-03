@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PageController@index')->name('homepage');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 //Route per Admin
 
