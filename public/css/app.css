@@ -10944,6 +10944,48 @@ a.text-dark:focus {
   }
 }
 
+.carousel {
+  margin: 20px 0;
+  background-color: #1C1C1C;
+  height: 700px;
+}
+
+.carousel h2 {
+  color: white;
+  background-color: #418DEE;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  top: -25px;
+  left: 250px;
+}
+
+.carousel .comic_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .comic_cards .comic_card {
+  align-self: center;
+  padding: 0 10px;
+}
+
+.carousel .comic_cards .comic_card img {
+  height: 550px;
+}
+
+.carousel .comic_cards .comic_card h4 {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 0 0;
+}
+
+.carousel .comic_cards .comic_card p {
+  color: #418DEE;
+}
+
 header .header_top {
   height: 50px;
   background-color: #418DEE;

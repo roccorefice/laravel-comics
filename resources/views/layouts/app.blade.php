@@ -85,7 +85,7 @@
         </header>
 
         <main class="py-4">
-            <div class="container">
+            {{-- <div class="container"> --}}
                 <div class="row">
                     <div class="col-lg-12">
                         @yield('content')
@@ -93,7 +93,7 @@
                     </div>
                     
                 </div>
-            </div>
+            {{-- </div> --}}
         </main>
     </div>
 </body>
