@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Comic;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class ComicController extends Controller
 {
@@ -26,7 +28,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.comics.create');
     }
 
     /**
@@ -37,7 +39,27 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request['slug'] = Str::slug($request->title);
+        $validatedData = $request->validate([
+            'title' => 'required',
+            'slug' => 'required',
+            'author' => 'required',
+            'description' => 'required',
+            'available' => 'required',
+            'price' => 'required',
+            'cover' => 'nullable | image | max:500'
+        ]);
+        $validatedData["slug"] = Str::slug($request->title);
+        
+        //accedo al percorso delle immagini
+        $cover = Storage::put('cover_imgs', $request->cover);
+        //salvo il percorso delle immagini
+        $validatedData["cover"] = $cover;
+
+        Comic::create($validatedData);
+
+        $new_comic = Comic::orderBy('id', 'desc')->first();
+        return redirect()->route('admin.comics.index', $new_comic);
     }
 
     /**
@@ -73,7 +95,9 @@ class ComicController extends Controller
     {
          //validazione
          $validatedData = $request->validate([
-            'title' => 'required', 
+            'title' => 'required',
+            'description' => 'required'
+
         ]);
 
         $comic->update($validatedData);

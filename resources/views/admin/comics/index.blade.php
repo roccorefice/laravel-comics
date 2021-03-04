@@ -1,33 +1,66 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<h1>All Comics for Admin</h1>
+<div class="jumbotron">
+    <h1 class="display-6">All Comics for Admin</h1>
+    <a class="btn btn-primary btn-lg" href="{{ route('admin.comics.create') }}">Create a Comic</a>
+</div>
+
 
 <table class="table table-striped table-inverse table-responsive">
     <thead class="thead-inverse">
         <tr>
             <th>ID</th>
+            <th>Cover</th>
             <th>Title</th>
             <th>Slug</th>
+            <th>Author</th>
+            <th>Descriptioon</th>
+            <th>Price</th>
+            <th>Available</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
             @foreach ($comics as $comic)
             <tr>
+                {{-- ID --}}
                 <td scope="row">{{ $comic->id }}</td>
+                {{-- COVER --}}
+                <td>
+                    @if ($comic->cover)
+                        <img width="50" src="{{ asset('storage/'  . $comic->cover) }}" alt="" srcset="">
+                    @endif
+                    {{-- <img width="50" src="{{ $comic->cover }}" alt=""> --}}
+                </td>
+                {{-- TITLE --}}
                 <td>{{ $comic->title }}</td>
+                {{-- SLUG --}}
                 <td>{{ $comic->slug }}</td>
+                {{-- AUTHOR --}}
+                <td>{{ $comic->author }}</td>
+                {{-- DESCRIPTION --}}
+                <td>{{ $comic->description }}</td>
+                {{-- PRICE --}}
+                <td>{{ $comic->price }}</td>
+                {{-- ACTIONS  --}}
+                <td>
+                    @if ($comic->available == "yes")
+                        yes
+                    @else
+                        no
+                    @endif
+                </td>
                 <td>
                     {{-- view --}}
-                    <a class="btn btn-primary p-1" href="{{ route('admin.comics.show', ['comic' => $comic->slug]) }}">View</a>
+                    <a class="btn btn-primary p-1" href="{{ route('admin.comics.show', ['comic' => $comic->slug]) }}"><i class="fas fa-eye"></i></a>
 
                     {{-- edit --}}
-                    <a class="btn btn-primary p-1" href="{{route('admin.comics.edit', ['comic' => $comic->slug])}}">Edit</a>
+                    <a class="btn btn-primary p-1" href="{{route('admin.comics.edit', ['comic' => $comic->slug])}}"><i class="fas fa-edit"></i></a>
 
                     {{-- delete --}}
                     <button type="button" class="btn btn-danger p-1 m-1" data-toggle="modal" data-target="#destroy-{{$comic->slug}}">
-                    Delete
+                        <i class="fas fa-trash"></i>
                     </button>
 
                     {{-- modale per eliminare comic --}}
