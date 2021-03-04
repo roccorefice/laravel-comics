@@ -13,4 +13,13 @@ class Comic extends Model
     {
         return 'slug';
     }
+
+    public function artists()
+    {
+        return $this->belongsToMany(Artist::class);
+    }
+    public function authors()
+    {
+        return $this->belongsToMany(Author::class);
+    }
 }
