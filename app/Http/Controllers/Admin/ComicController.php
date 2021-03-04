@@ -44,6 +44,7 @@ class ComicController extends Controller
             'title' => 'required',
             'slug' => 'required',
             'author' => 'required',
+            'artist' => 'required',
             'description' => 'required',
             'available' => 'required',
             'price' => 'required',

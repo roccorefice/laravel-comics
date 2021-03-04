@@ -40,6 +40,15 @@
         <div class="alert alert-danger">{{ $message }}</div>
     @enderror
 
+    {{-- artist --}}
+    <div class="form-group">
+        <label for="artist">Artist</label>
+        <input class="form-control" type="text" name="artist" id="artist" required value="{{ old('artist') }}">
+    </div>
+    @error('artist')
+        <div class="alert alert-danger">{{ $message }}</div>
+    @enderror
+
     {{-- description --}}
     <div class="form-group">
         <label for="description">Description</label>

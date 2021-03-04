@@ -15,6 +15,7 @@
             <th>Title</th>
             <th>Slug</th>
             <th>Author</th>
+            <th>Artist</th>
             <th>Descriptioon</th>
             <th>Price</th>
             <th>Available</th>
@@ -39,6 +40,8 @@
                 <td>{{ $comic->slug }}</td>
                 {{-- AUTHOR --}}
                 <td>{{ $comic->author }}</td>
+                {{-- ARTIST --}}
+                <td>{{ $comic->artist }}</td>
                 {{-- DESCRIPTION --}}
                 <td>{{ $comic->description }}</td>
                 {{-- PRICE --}}

@@ -19,6 +19,7 @@ class CreateComicsTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('author');
+            $table->string('artist');
             $table->text('description');
             $table->float('price', 6, 3);
             $table->string('available');

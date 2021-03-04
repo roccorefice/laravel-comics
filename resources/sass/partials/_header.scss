@@ -1,0 +1,29 @@
+header {
+    .header_top {
+        height: 50px;
+        background-color: #418DEE;
+    }
+    .container {
+        max-width: 1200px;
+        a {
+            font-weight: 600;
+            font-size: 18px;
+            padding-right: 10px;
+        }
+    }
+    .dropdown {
+        .search {
+            height: 50px;
+            border: 0px;
+            border-bottom: 3px solid #418DEE;
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+            text-align: right;
+            width: 150px;
+        }
+        i {
+            font-size: 18px;
+        }
+    }
+}
