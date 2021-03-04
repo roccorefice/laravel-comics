@@ -11016,3 +11016,27 @@ header .dropdown i {
   font-size: 18px;
 }
 
+.details_comic h4 {
+  color: #163F5E;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 50px 0 25px;
+}
+
+.details_comic table {
+  background-color: #55BA59;
+  font-size: 18px;
+}
+
+.details_comic table th {
+  color: white;
+  padding: 25px;
+}
+
+.details_comic p {
+  line-height: 28px;
+  font-size: 18px;
+  color: #555555;
+  padding: 12px 0;
+}
+
