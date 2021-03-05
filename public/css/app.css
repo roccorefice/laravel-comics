@@ -10944,6 +10944,11 @@ a.text-dark:focus {
   }
 }
 
+.container_local {
+  width: 1400px;
+  margin: 0 auto;
+}
+
 .carousel {
   margin: 20px 0;
   background-color: #1C1C1C;
@@ -10989,7 +10994,7 @@ a.text-dark:focus {
 }
 
 .must_read {
-  padding-top: 30px;
+  padding: 70px 0;
 }
 
 .must_read .mr_title {
@@ -11032,6 +11037,43 @@ a.text-dark:focus {
 
 .must_read .mr_item .container > div:nth-child(3) > img {
   height: 350px;
+}
+
+.current_series {
+  background-color: #1C1C1C;
+  padding: 25px;
+}
+
+.current_series h2 {
+  color: white;
+  background-color: #418DEE;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  top: -50px;
+  left: 250px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.current_series .cs_items {
+  text-align: center;
+}
+
+.current_series .cs_items .cs_item {
+  margin: 10px;
+  height: 250px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.current_series .cs_items .cs_item h5 {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0 0;
+  text-align: left;
 }
 
 header .header_top {
