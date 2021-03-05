@@ -61,14 +61,6 @@
     </div>
   </div>
 
-  <div class="blu_ban">
-    <ul class="list-unstyled">
-      <a href=""><li>DIGITAL COMICS</li></a>
-      <a href=""><li>DC MERCHANDISE</li></a>
-      <a href=""><li>PRINT SUBSCRIPTIONS</li></a>
-      <a href=""><li>COMIC SHOP LOCATOR</li></a>
-    </ul>
-  </div>
 </div>
   
 

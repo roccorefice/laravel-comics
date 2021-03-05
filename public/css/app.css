@@ -10950,7 +10950,7 @@ a.text-dark:focus {
 }
 
 .carousel {
-  margin: 20px 0;
+  margin: 50px 0 0px;
   background-color: #1C1C1C;
   height: 700px;
 }
@@ -11051,7 +11051,7 @@ a.text-dark:focus {
   padding: 10px;
   position: relative;
   top: -50px;
-  left: 250px;
+  left: 500px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -11106,11 +11106,16 @@ header .dropdown i {
   font-size: 18px;
 }
 
+.details_comic img {
+  margin: 50px;
+  height: 350px;
+}
+
 .details_comic h4 {
   color: #163F5E;
   font-size: 40px;
   font-weight: 600;
-  padding: 50px 0 25px;
+  padding: 10px 0 25px;
 }
 
 .details_comic .table_green {
@@ -11196,5 +11201,77 @@ header .dropdown i {
   font-weight: 500;
   display: inline-block;
   padding: 0 70px;
+}
+
+.footer {
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding: 50px;
+}
+
+.footer .lists {
+  display: flex;
+  z-index: 10;
+  color: white;
+}
+
+.footer .lists ul {
+  list-style: none;
+  line-height: 25px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+.footer .lists ul li:nth-child(1) {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.footer .lists ul li {
+  color: grey;
+}
+
+.footer p {
+  color: grey;
+}
+
+.grey_ban {
+  background-color: #2D2D2D;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.grey_ban .d_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grey_ban button {
+  align-self: center;
+  background-color: #2D2D2D;
+  color: white;
+  border: 1px solid #0282F9;
+  padding: 7px;
+  font-size: 18px;
+}
+
+.grey_ban .social a {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.grey_ban .social i {
+  font-size: 35px;
+  color: grey;
+  height: 50px;
+  width: 50px;
 }
 

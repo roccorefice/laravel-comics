@@ -20,9 +20,7 @@
 <body>
     <div id="app">
         <header>
-            <div class="header_top">
-    
-            </div>
+
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm ">
                 <div class="container">
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -84,7 +82,7 @@
             </nav>
         </header>
 
-        <main class="py-4">
+        <main >
             {{-- <div class="container"> --}}
                 <div class="row">
                     <div class="col-lg-12">
@@ -95,6 +93,84 @@
                 </div>
             {{-- </div> --}}
         </main>
+
+        <footer>
+            <div class="blu_ban">
+                <ul class="list-unstyled">
+                      <a href=""><li>DIGITAL COMICS</li></a>
+                      <a href=""><li>DC MERCHANDISE</li></a>
+                      <a href=""><li>PRINT SUBSCRIPTIONS</li></a>
+                      <a href=""><li>COMIC SHOP LOCATOR</li></a>
+                </ul>
+          </div>
+          <div class="footer">
+              <div class="footer_content container_local">
+                  <div class="lists ">
+                      
+                      <ul>
+                          <li>DC COMICS</li>
+                          <li>Characters</li>
+                          <li>Comics</li>
+                          <li>Movies</li>
+                          <li>TV</li>
+                          <li>Games</li>
+                          <li>Videos</li>
+                          <li>News</li>
+                          <li>
+                              <ul>
+                                  <li>SHOP</li>
+                                  <li>Shop DC</li>
+                                  <li>Shop Dc Collectibles</li>
+                              </ul>
+                          </li>
+                      </ul>
+
+                      <ul>
+                          <li>DC</li>
+                          <li>Terms of Use</li>
+                          <li>Privacy Policy</li>
+                          <li>Advertising</li>
+                          <li>jobs</li>
+                          <li>Subsciptions</li>
+                          <li>Talent Workshop</li>
+                          <li>CPSC Certificates</li>
+                          <li>Ratings</li>
+                          <li>Shop</li>
+                          <li>Contacts us</li>
+                      </ul>
+
+                      <ul>
+                        <li>SITIES</li>
+                        <li>DC</li>
+                        <li>MAD magazine</li>
+                        <li>DC Kids</li>
+                        <li>DC Universe</li>
+                        <li>DC Shop</li>
+                    </ul>
+                  </div>
+                   <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a href="">noted here.</a>  All rights reserved. 
+                     <br> <a href="">Cookies Settings</a> </p>
+              </div>
+          </div>
+
+          <div class="grey_ban ">
+              <div class="container_local d_flex">
+                  <div class="footer_btn">
+                      <button>SIGN UP NOW!</button>
+                  </div>
+                  <div class="social">
+                      <a href="">FOLLOW US</a>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-periscope"></i>
+
+
+                  </div>
+              </div>
+          </div>
+        </footer>
     </div>
 </body>
 </html>

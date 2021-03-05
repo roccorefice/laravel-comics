@@ -1,9 +1,13 @@
 .details_comic {
+    img {
+        margin: 50px;
+        height: 350px;
+    }
     h4 {
         color: #163F5E;
         font-size: 40px;
         font-weight: 600;
-        padding: 50px 0 25px;
+        padding: 10px 0 25px;
     }
     .table_green {
         background-color: #55BA59;
@@ -62,20 +66,5 @@
         color: #163F5E;
         font-weight: 600;
         font-size: 16px;
-    }
-}
-
-.blu_ban {
-    height: 150px;
-    background-color: #0282F9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-        color: white;
-        font-size: 18px;
-        font-weight: 500;
-        display: inline-block;
-        padding: 0 70px;
     }
 }
