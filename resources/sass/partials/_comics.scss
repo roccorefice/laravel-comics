@@ -1,0 +1,78 @@
+.carousel {
+    margin: 20px 0;
+    background-color: #1C1C1C;
+    height: 700px;
+    h2 {
+        color: white;
+        background-color: #418DEE;
+        display: inline-block;
+        padding: 10px;
+        position: relative;
+        top: -25px;
+        left: 250px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .comic_cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .comic_card {
+            align-self: center;
+            padding: 0 10px;
+            img {
+                height: 550px;
+            }
+            h4 {
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 7px 0 0;
+            }
+            p {
+                color: #418DEE;
+            }
+        }
+    }
+}
+
+.must_read{
+    padding-top: 30px;
+    .mr_title{
+            color: #418DEE;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 30px 80px;
+        }
+    .mr_item{
+        width: 320px;
+        display: inline-block;
+        margin: 0 25px 0 0;
+        img{
+            height: 320px;
+        }
+        h4{
+            color: #418DEE;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 0 0;
+        }
+        h2{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+        p{
+            color: #464646;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 16px;
+            padding: 0;
+
+
+        }
+        .container > div:nth-child(3) > img{
+            height: 350px;
+        }
+    }
+}

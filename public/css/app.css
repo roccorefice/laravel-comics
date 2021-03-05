@@ -10958,6 +10958,8 @@ a.text-dark:focus {
   position: relative;
   top: -25px;
   left: 250px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .carousel .comic_cards {
@@ -10984,6 +10986,52 @@ a.text-dark:focus {
 
 .carousel .comic_cards .comic_card p {
   color: #418DEE;
+}
+
+.must_read {
+  padding-top: 30px;
+}
+
+.must_read .mr_title {
+  color: #418DEE;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 30px 80px;
+}
+
+.must_read .mr_item {
+  width: 320px;
+  display: inline-block;
+  margin: 0 25px 0 0;
+}
+
+.must_read .mr_item img {
+  height: 320px;
+}
+
+.must_read .mr_item h4 {
+  color: #418DEE;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0 0;
+}
+
+.must_read .mr_item h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.must_read .mr_item p {
+  color: #464646;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 0;
+}
+
+.must_read .mr_item .container > div:nth-child(3) > img {
+  height: 350px;
 }
 
 header .header_top {
@@ -11023,12 +11071,12 @@ header .dropdown i {
   padding: 50px 0 25px;
 }
 
-.details_comic table {
+.details_comic .table_green {
   background-color: #55BA59;
   font-size: 18px;
 }
 
-.details_comic table th {
+.details_comic .table_green th {
   color: white;
   padding: 25px;
 }
@@ -11038,5 +11086,73 @@ header .dropdown i {
   font-size: 18px;
   color: #555555;
   padding: 12px 0;
+  margin-bottom: 70px;
+}
+
+.more_details {
+  height: 350px;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 30px;
+}
+
+.more_details .container {
+  display: flex;
+}
+
+.more_details .talent {
+  text-align: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.more_details .talent h5 {
+  color: #163F5E;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.more_details .specs {
+  text-align: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.more_details .specs h5 {
+  color: #163F5E;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.more_details table {
+  margin: 5px;
+}
+
+.more_details table td {
+  height: 50px;
+}
+
+.more_details .col-tit {
+  color: #163F5E;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.blu_ban {
+  height: 150px;
+  background-color: #0282F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blu_ban a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 70px;
 }
 
